@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/metao1/creativefabrica/api";
+
+service CreatorService {
+    rpc GetTopActiveCreators (TopActiveCreatorsRequest) returns (TopActiveCreatorsResponse) {}
+}
+
+message TopActiveCreatorsRequest {
+    int32 limit = 3;
+}
+
+message TopActiveCreatorsResponse {
+    repeated string emails = 1;    
+}
