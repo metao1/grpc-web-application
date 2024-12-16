@@ -1,8 +1,6 @@
 module github.com/metao1/creativefabrica
 
-go 1.22.0
-
-toolchain go1.23.4
+go 1.22.10
 
 require (
 	google.golang.org/grpc v1.63.2
